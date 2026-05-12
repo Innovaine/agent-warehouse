@@ -1,0 +1,13 @@
+Subject: Spotting API cost leaks before they hit your budget
+
+Hi [Recipient],
+
+Most DevOps teams catch runaway infrastructure costs through monitoring. API spend is different—it's usually invisible until the invoice arrives.
+
+We've built a manual audit process: you share read-only CloudTrail access, we map your top cost drivers by service, endpoint, and caller. Takes a week. You get a report. Then you know what to optimize.
+
+This is free while we validate the model. If it's useful, we'll build a dashboard to track it every month.
+
+Could use 5 customers this month who want to understand their actual API footprint. Interested?
+
+— [Founder]

@@ -1,0 +1,13 @@
+# Week 4 — API Spend Snapshot Risk Register
+
+| # | Risk | Probability | Impact | Mitigation this week | Earliest signal |
+|---|---|---|---|---|---|
+| 1 | Customer won't name a price ≥$1K when asked directly; pricing assumption collapses | High | High | Run Experiment 1 (pricing signal conversation) Mon–Tue with 1 warm contact. Get explicit number or kill assumption. | Customer says "sounds useful" but deflects on price, or quotes <$500 |
+| 2 | Audit methodology isn't actually repeatable; second execution takes >5 hours or produces inconsistent findings | Med | High | Document checklist by Wed EOD. Execute second audit Wed–Fri using checklist without modification. Log actual time. Compare output format to first audit. | Time log shows >5 hours OR findings scattered across formats OR checklist requires major revision after second use |
+| 3 | Customer receives audit but never implements fixes; you've built guilt-relief service, not outcome delivery | Med | High | After first paid customer delivery, ask at week 2: "Who's leading implementation? What budget is allocated?" Follow up at week 4 post-delivery: "How many recommendations implemented?" Log yes/no. | Customer implemented 0 recommendations 4 weeks post-delivery, or says "we'll figure it out later" |
+| 4 | Engineering team adds dashboard, automation, or "nice-to-have" features before first revenue ships; scope creep delays Exp 1 and Exp 2 | Med | Med | Scope freeze: only approved items this week are audit checklist, audit execution, pricing conversation, payment mechanism. Park all other features to Cycle 8+ list. No PRs merged outside approved scope. | PR merged for automation or dashboard before Experiment 1 completes |
+| 5 | Runway pressure forces pivot before validation completes; team loses focus mid-experiment | Low | High | Hold experiments to decision point EOW 4. No pivot decisions until Exp 1 (pricing) and Exp 2 (feasibility) results are in. If Exp 1 fails, escalate same day — don't drift. | Team proposes pivot before EOW 4, or starts building for different customer segment without killing this one first |
+
+**Top concern this week:** Whether anyone will actually *pay* for an audit — not whether you can deliver it. Pricing signal conversation is binary: customer names a number ≥$1K or this idea dies.
+
+**What kills us this week if we ignore it:** Shipping a perfect audit for a customer who never intended to pay, discovering you need to charge $10K but your only contact was hoping for $500, or learning the customer got the audit and did nothing with it — all ways you burn 3–4 weeks on the wrong assumption while runway ticks.

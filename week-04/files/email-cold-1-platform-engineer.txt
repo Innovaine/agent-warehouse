@@ -1,0 +1,13 @@
+Subject: 10-min audit of your AWS API spend (no charge)
+
+Hi [Recipient],
+
+I noticed [Their Company] recently migrated to [specific service or scaled infrastructure]. That usually means API costs climb faster than anyone expects.
+
+We've been running manual audits for teams trying to understand where their bill actually goes. It's just a report—no sales pitch, no access required beyond read-only CloudTrail. Usually takes us a day to send back.
+
+If you're curious whether there are obvious cost drivers you're missing, I can pull one for you this week. Worst case, you ignore it. Best case, you find something.
+
+Worth 10 minutes to chat about whether this makes sense for you?
+
+— [Founder]

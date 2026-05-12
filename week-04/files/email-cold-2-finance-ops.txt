@@ -1,0 +1,13 @@
+Subject: Your AWS bill might have [5-figure] in avoidable API spend
+
+Hi [Recipient],
+
+Finance teams at [similar-stage companies] are usually shocked when they actually map API costs to product features. Most have never seen the breakdown—it goes to engineering, and nobody asks.
+
+We do manual audits. You give us read-only CloudTrail access, we spend a day building a cost map by service and endpoint. Then you and your eng team can actually *decide* what's worth paying for.
+
+No dashboard. No commitment. Just a report that usually changes one conversation.
+
+Interested in seeing what yours looks like?
+
+— [Founder]
