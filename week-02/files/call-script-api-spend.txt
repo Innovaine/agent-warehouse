@@ -1,0 +1,37 @@
+CALL SCRIPT: API Cost Discovery Workflow
+Target: 5 pre-qualified customers (companies with $10k+/mo cloud spend)
+Duration: 45 minutes
+Goal: Validate demand for manual audit service
+
+OPENING (3 min):
+"Thanks for taking time. We're exploring whether there's a real need for a service that audits your API spend—specifically, the manual detective work of finding where money is leaking. I want to understand your current process, the pain points, and whether what we're thinking would help."
+
+SECTION 1: Current State (12 min)
+- Walk me through the last time you discovered an API bill was higher than expected. When was it? What triggered the discovery?
+- How did you figure out which API or service was responsible?
+- How much time did that investigation take? Who was involved?
+- Do you have a process for this, or does it happen ad-hoc?
+
+SECTION 2: Pain (10 min)
+- If you had to describe the biggest friction point in that process, what would it be?
+- How often does this happen? Weekly? Monthly? Quarterly?
+- What's the worst-case scenario—highest bill surprise you've had?
+- Have you ever missed catching a runaway cost before it showed up on the invoice?
+
+SECTION 3: Solution Fit (15 min)
+- Imagine we gave you a detailed audit report: top 10 cost drivers by API, by endpoint, ranked by spend. Shows exactly which requests are expensive. Takes us 2 hours to produce. Cost: $400/month for recurring monthly audits.
+- Would that have helped in your last discovery incident?
+- Would you pay $400/month for that report delivered automatically each month?
+- If not $400, what would be reasonable to you?
+- Who would be the buyer inside your org?
+
+CLOSING (5 min):
+- If we built this, would you be an early customer?
+- Can I follow up in 2 weeks with a demo?
+- Who else should we talk to?
+
+---
+NOTES FOR AFTER CALL:
+- Tally YES/NO on: "Would pay $400/month"
+- Note any specific cost drivers mentioned (e.g., "S3 scanning," "Lambda concurrency")
+- Identify buying process (who approves? how long?)

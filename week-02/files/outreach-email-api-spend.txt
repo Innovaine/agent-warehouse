@@ -1,0 +1,15 @@
+Subject: 20 min to talk about your AWS/GCP API bills?
+
+Hi [NAME],
+
+Quick ask: have you ever discovered an API bill was way higher than you expected, and had to manually dig through logs to figure out which service or endpoint caused it?
+
+We're building a lightweight audit service that does that work in 2 hours instead of 2 days. Before we commit to building it, we want to talk to engineers who've lived through that pain.
+
+Would you have 45 minutes this week or next to walk me through how you currently spot API overruns? No pitch. Honest conversation.
+
+If yes, grab a slot here: [CALENDLY LINK]
+
+Thanks,
+[YOUR NAME]
+Innovaine
