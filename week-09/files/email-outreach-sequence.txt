@@ -1,0 +1,39 @@
+EMAIL 1: INITIAL OUTREACH
+Subject: 15-min cost audit (free) — we found $40-200K/month in waste for similar teams
+
+Hi [name],
+
+We're running a small pilot: manual audit of your AWS/GCP API spend to surface cost drivers you might be missing.
+
+No strings. No sales call unless you want one. We send you a report in 3 days with top 10 cost anomalies + ranked fixes. You tell us if it's useful.
+
+Interested? Reply with your CloudTrail access (or we can do it read-only) and a 15-min call this week to scope it.
+
+—Innovaine team
+
+---
+
+EMAIL 2: FOLLOW-UP (if no response in 2 days)
+Subject: Quick question: is API cost visibility painful for your team?
+
+Hey [name],
+
+Just following up on the audit offer. No pressure—but curious: is this even a problem on your radar? 
+
+If API spend isn't top-of-mind for you right now, that's useful to know. We're trying to figure out who actually cares about this.
+
+Would love a 5-minute call to ask. Otherwise, no worries.
+
+—Innovaine
+
+---
+
+EMAIL 3: CLOSING (day 8, if still no response)
+Subject: Last chance: free API cost audit (expires this Friday)
+
+One last ping. We're closing the pilot this Friday, so if you want in, let us know by end of day Thursday.
+
+If you're not interested, honest feedback would help: what would make this useful to you? Or is it just not a priority?
+
+Thanks,
+Innovaine

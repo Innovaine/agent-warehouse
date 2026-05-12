@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API Spend Snapshot — Free Audit Pilot</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: linear-gradient(135deg, #0066ff 0%, #00d4ff 100%); min-height: 100vh; padding: 20px; display: flex; align-items: center; justify-content: center; }
+    .container { max-width: 600px; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
+    .header { background: linear-gradient(135deg, #0066ff 0%, #00d4ff 100%); padding: 40px 30px; color: white; }
+    .logo { font-size: 20px; font-weight: 700; margin-bottom: 15px; }
+    .headline { font-size: 28px; font-weight: 700; line-height: 1.3; margin-bottom: 10px; }
+    .subheadline { font-size: 16px; opacity: 0.95; line-height: 1.4; }
+    .body { padding: 40px 30px; }
+    .section { margin-bottom: 30px; }
+    .section-title { font-size: 16px; font-weight: 700; color: #0066ff; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px; }
+    .feature-list { list-style: none; }
+    .feature-list li { padding: 10px 0; padding-left: 28px; position: relative; font-size: 15px; line-height: 1.5; color: #333; }
+    .feature-list li:before { content: "✓"; position: absolute; left: 0; font-weight: 700; color: #0066ff; font-size: 18px; }
+    .stat-row { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 15px 0; }
+    .stat { background: #f0f4ff; padding: 12px; border-radius: 6px; }
+    .stat-number { font-size: 20px; font-weight: 700; color: #0066ff; }
+    .stat-label { font-size: 12px; color: #666; margin-top: 4px; }
+    .cta-button { background: linear-gradient(135deg, #0066ff 0%, #00d4ff 100%); color: white; padding: 16px 30px; border: none; border-radius: 8px; font-size: 16px; font-weight: 600; cursor: pointer; width: 100%; margin-top: 20px; transition: transform 0.2s, box-shadow 0.2s; }
+    .cta-button:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,102,255,0.3); }
+    .footer-text { font-size: 12px; color: #999; text-align: center; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">Innovaine</div>
+      <div class="headline">Your API Costs Are Leaking Money</div>
+      <div class="subheadline">Free manual audit to find the holes.</div>
+    </div>
+    <div class="body">
+      <div class="section">
+        <div class="section-title">What We Do</div>
+        <p style="font-size: 15px; line-height: 1.6; color: #333; margin-bottom: 15px;">
+          We audit your AWS/GCP API spend to surface cost anomalies your team doesn't see. One report, 3 days, zero risk.
+        </p>
+        <ul class="feature-list">
+          <li>Ranked list of your top 10 cost drivers</li>
+          <li>Specific fixes with estimated savings</li>
+          <li>No setup. No ongoing commitment.</li>
+          <li>Read-only access to your CloudTrail</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <div class="section-title">What's Typical</div>
+        <div class="stat-row">
+          <div class="stat">
+            <div class="stat-number">$12–80K</div>
+            <div class="stat-label">Monthly spend audited</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">18–35%</div>
+            <div class="stat-label">Waste identified</div>
+          </div>
+        </div>
+        <div class="stat-row">
+          <div class="stat">
+            <div class="stat-number">3 days</div>
+            <div class="stat-label">Report turnaround</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">$2–15K</div>
+            <div class="stat-label">Monthly savings per fix</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">How It Works</div>
+        <ol style="padding-left: 20px; font-size: 15px; line-height: 1.8; color: #333;">
+          <li><strong>You give us access</strong> to your CloudTrail logs (read-only, no credentials stored).</li>
+          <li><strong>We analyze</strong> your API traffic, compute, storage, and data transfer costs.</li>
+          <li><strong>You get a report</strong> with ranked fixes and a 15-min optional call to discuss.</li>
+          <li><strong>You decide</strong> whether it's useful. No strings attached.</li>
+        </ol>
+      </div>
+
+      <div class="section">
+        <div class="section-title">After the Audit</div>
+        <p style="font-size: 15px; line-height: 1.6; color: #333;">
+          If you'd find it useful to have this analysis run automatically every month—or even weekly—we're building a lightweight dashboard that does exactly that. We want to know if you'd pay for it.
+        </p>
+      </div>
+
+      <button class="cta-button">Get Your Free Audit</button>
+      <p class="footer-text">No credit card. Limited to 5 customers this month.</p>
+    </div>
+  </div>
+</body>
+</html>

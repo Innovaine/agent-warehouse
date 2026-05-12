@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API Spend Audit Report — [Customer Name]</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.6; color: #222; background: #f5f5f5; padding: 20px; }
+    .container { max-width: 800px; margin: 0 auto; background: white; padding: 40px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .header { border-bottom: 3px solid #0066ff; padding-bottom: 20px; margin-bottom: 30px; }
+    .logo { font-weight: 700; font-size: 18px; color: #0066ff; }
+    .date { font-size: 12px; color: #999; margin-top: 8px; }
+    h1 { font-size: 24px; margin: 20px 0 10px 0; color: #000; }
+    h2 { font-size: 18px; margin: 25px 0 15px 0; color: #333; border-left: 4px solid #0066ff; padding-left: 12px; }
+    .metric { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0; }
+    .stat-box { background: #f0f4ff; padding: 15px; border-radius: 6px; }
+    .stat-label { font-size: 12px; color: #666; text-transform: uppercase; letter-spacing: 0.5px; }
+    .stat-value { font-size: 32px; font-weight: 700; color: #0066ff; margin-top: 8px; }
+    .stat-note { font-size: 13px; color: #999; margin-top: 4px; }
+    table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 14px; }
+    th { background: #f0f4ff; padding: 10px 12px; text-align: left; font-weight: 600; color: #333; border-bottom: 2px solid #ddd; }
+    td { padding: 10px 12px; border-bottom: 1px solid #eee; }
+    tr:hover { background: #fafafa; }
+    .rank { font-weight: 700; color: #0066ff; width: 40px; }
+    .fix-priority { display: inline-block; padding: 3px 8px; border-radius: 3px; font-size: 11px; font-weight: 600; }
+    .priority-high { background: #ffe6e6; color: #cc0000; }
+    .priority-medium { background: #fff3e6; color: #cc8800; }
+    .priority-low { background: #e6f3ff; color: #0066cc; }
+    .section-break { margin: 40px 0; padding-top: 20px; border-top: 1px solid #eee; }
+    .cta { background: #0066ff; color: white; padding: 16px 20px; border-radius: 6px; margin-top: 30px; text-align: center; font-weight: 600; display: inline-block; cursor: pointer; }
+    .footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee; font-size: 12px; color: #999; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">Innovaine</div>
+      <div class="date">API Spend Audit Report | Generated: January 2025</div>
+    </div>
+
+    <h1>Your API Cost Analysis</h1>
+    <p><strong>[Customer Name]</strong> — Audit period: [Date Range]</p>
+
+    <div class="section-break"></div>
+
+    <h2>Summary</h2>
+    <div class="metric">
+      <div class="stat-box">
+        <div class="stat-label">Total API Spend</div>
+        <div class="stat-value">$12,847</div>
+        <div class="stat-note">Last 30 days</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-label">Potential Waste</div>
+        <div class="stat-value">$3,420</div>
+        <div class="stat-note">26% of spend</div>
+      </div>
+    </div>
+
+    <p style="margin: 20px 0; padding: 12px; background: #fff3e6; border-left: 4px solid #ff9900; border-radius: 4px; font-size: 14px;">
+      <strong>⚠️ Quick win:</strong> Your Lambda function `batch-processor-v3` is running 12 hours/day but only processing ~100 items. Scaling down the memory allocation could save ~$800/month with zero performance impact.
+    </p>
+
+    <div class="section-break"></div>
+
+    <h2>Top 10 Cost Drivers</h2>
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 30px;">#</th>
+          <th>Service / Function</th>
+          <th style="text-align: right;">30-Day Cost</th>
+          <th>Primary Issue</th>
+          <th>Fix Priority</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="rank">1</td>
+          <td>Lambda (batch-processor-v3)</td>
+          <td style="text-align: right;">$4,200</td>
+          <td>Oversized memory allocation</td>
+          <td><span class="fix-priority priority-high">HIGH</span></td>
+        </tr>
+        <tr>
+          <td class="rank">2</td>
+          <td>API Gateway (prod-api)</td>
+          <td style="text-align: right;">$2,850</td>
+          <td>No caching on repeated requests</td>
+          <td><span class="fix-priority priority-high">HIGH</span></td>
+        </tr>
+        <tr>
+          <td class="rank">3</td>
+          <td>CloudFront (cdn-us-east)</td>
+          <td style="text-align: right;">$2,100</td>
+          <td>Serving stale assets (low TTL)</td>
+          <td><span class="fix-priority priority-high">HIGH</span></td>
+        </tr>
+        <tr>
+          <td class="rank">4</td>
+          <td>S3 (logs bucket)</td>
+          <td style="text-align: right;">$980</td>
+          <td>No lifecycle policy; keeping 18mo of logs</td>
+          <td><span class="fix-priority priority-medium">MEDIUM</span></td>
+        </tr>
+        <tr>
+          <td class="rank">5</td>
+          <td>DynamoDB (sessions)</td>
+          <td style="text-align: right;">$650</td>
+          <td>On-demand billing (should be provisioned)</td>
+          <td><span class="fix-priority priority-medium">MEDIUM</span></td>
+        </tr>
+        <tr>
+          <td class="rank">6</td>
+          <td>RDS (db-prod-read)</td>
+          <td style="text-align: right;">$420</td>
+          <td>Read replica in unused region</td>
+          <td><span class="fix-priority priority-high">HIGH</span></td>
+        </tr>
+        <tr>
+          <td class="rank">7</td>
+          <td>NAT Gateway (nat-us-west)</td>
+          <td style="text-align: right;">$310</td>
+          <td>Outbound data transfer (VPN would be cheaper)</td>
+          <td><span class="fix-priority priority-low">LOW</span></td>
+        </tr>
+        <tr>
+          <td class="rank">8</td>
+          <td>KMS (key rotation)</td>
+          <td style="text-align: right;">$180</td>
+          <td>Rotating keys monthly (quarterly is safe)</td>
+          <td><span class="fix-priority priority-low">LOW</span></td>
+        </tr>
+        <tr>
+          <td class="rank">9</td>
+          <td>SNS (legacy-alerts)</td>
+          <td style="text-align: right;">$95</td>
+          <td>Sending redundant alerts (consolidate rules)</td>
+          <td><span class="fix-priority priority-low">LOW</span></td>
+        </tr>
+        <tr>
+          <td class="rank">10</td>
+          <td>CloudTrail (multi-region)</td>
+          <td style="text-align: right;">$62</td>
+          <td>Logging unused regions</td>
+          <td><span class="fix-priority priority-low">LOW</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="section-break"></div>
+
+    <h2>Immediate Actions (Next 1 Week)</h2>
+    <ol style="margin: 15px 0 15px 20px;">
+      <li><strong>Reduce Lambda memory from 3GB to 512MB</strong> for batch-processor-v3. Estimated savings: $800/month. Risk: Test in staging first (5 min run time).</li>
+      <li><strong>Enable API Gateway caching</strong> for GET endpoints. TTL: 300s. Estimated savings: $1,100/month. Risk: None if cache key is correct.</li>
+      <li><strong>Increase CloudFront TTL from 60s to 3600s</strong> for static assets. Estimated savings: $950/month. Risk: Ensure you have a cache invalidation process for deploys.</li>
+    </ol>
+
+    <div class="section-break"></div>
+
+    <h2>Next Steps</h2>
+    <p>This audit is a snapshot. We've identified the biggest cost leaks, but your team will know best whether these fixes are safe for your use case.</p>
+    <p style="margin-top: 15px;">If you'd find it useful to have this kind of analysis monthly—or even weekly—with a dashboard that auto-pulls your top drivers and flags anomalies, let's talk. That's what we're building.</p>
+    
+    <button class="cta">Discuss recurring audits with Innovaine</button>
+
+    <div class="footer">
+      <p><strong>Questions about this report?</strong> Reply to this email or reach out to our team.</p>
+      <p style="margin-top: 8px;">Innovaine — API spend visibility for teams that care. hello@innovaine.com</p>
+    </div>
+  </div>
+</body>
+</html>

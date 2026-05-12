@@ -1,0 +1,79 @@
+{
+  "project": "API Spend Snapshot — Manual audit service",
+  "validation_window": "Week 9 (Dec 9-13, 2026)",
+  "decision_gate": "4+ customers say YES to $400/month = build. 3 or fewer = kill.",
+  "calls_scheduled": [
+    {
+      "customer_id": 1,
+      "name": "TBD — Platform Engineer (cold outreach, week 5)",
+      "scheduled_time": "TBD",
+      "completed": false,
+      "signal": null,
+      "willingness_to_pay_400_quote": null,
+      "monthly_api_spend_estimate": null,
+      "visibility_gap": null,
+      "frequency_preference": null,
+      "format_preference": null,
+      "red_flags": null
+    },
+    {
+      "customer_id": 2,
+      "name": "TBD — Finance Ops (cold outreach, week 5)",
+      "scheduled_time": "TBD",
+      "completed": false,
+      "signal": null,
+      "willingness_to_pay_400_quote": null,
+      "monthly_api_spend_estimate": null,
+      "visibility_gap": null,
+      "frequency_preference": null,
+      "format_preference": null,
+      "red_flags": null
+    },
+    {
+      "customer_id": 3,
+      "name": "TBD — DevOps Manager (cold outreach, week 5)",
+      "scheduled_time": "TBD",
+      "completed": false,
+      "signal": null,
+      "willingness_to_pay_400_quote": null,
+      "monthly_api_spend_estimate": null,
+      "visibility_gap": null,
+      "frequency_preference": null,
+      "format_preference": null,
+      "red_flags": null
+    },
+    {
+      "customer_id": 4,
+      "name": "TBD — warm intro or referral (week 8)",
+      "scheduled_time": "TBD",
+      "completed": false,
+      "signal": null,
+      "willingness_to_pay_400_quote": null,
+      "monthly_api_spend_estimate": null,
+      "visibility_gap": null,
+      "frequency_preference": null,
+      "format_preference": null,
+      "red_flags": null
+    },
+    {
+      "customer_id": 5,
+      "name": "TBD — warm intro or referral (week 8)",
+      "scheduled_time": "TBD",
+      "completed": false,
+      "signal": null,
+      "willingness_to_pay_400_quote": null,
+      "monthly_api_spend_estimate": null,
+      "visibility_gap": null,
+      "frequency_preference": null,
+      "red_flags": null
+    }
+  ],
+  "tally": {
+    "yes_count": 0,
+    "maybe_count": 0,
+    "no_count": 0,
+    "decision": "PENDING — awaiting call completion"
+  },
+  "decision_made_at": null,
+  "next_action": "SCHEDULE AND RUN CALLS MON–WED"
+}
