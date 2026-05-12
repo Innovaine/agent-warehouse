@@ -1,0 +1,9 @@
+{
+  "title": "API Spend Snapshot — Manual audit service for runaway API costs",
+  "proposedBy": "Leila",
+  "proposedAt": 1778614592883,
+  "cycleId": 3,
+  "ideaBody": "TITLE: API Spend Snapshot — Manual audit service for runaway API costs\n\nPITCH: Customers send us 48 hours of CloudTrail logs or list their top 10 API endpoints with monthly spend. We (or a contractor) spend 4 hours analyzing, send back a ranked report of cost drivers with 3-5 concrete fixes (e.g., \"batch this endpoint call, save $8k/month\"). Ship it in 3 days, charge $500 per audit. This validates whether the problem is real AND whether people will pay before we build the automated version.\n\nWHO_FOR: DevOps leads and engineering managers at mid-market SaaS companies burning $5k+ monthly on AWS API calls.\n\nWHY_NOW: We've cycled on this problem twice and learned the hard way that it's real—but we don't know if customers will actually pay or if they need continuous monitoring. A manual service proves the market in 10 days with zero infrastructure risk, and if 3-4 customers buy, we've got revenue + proof to build the automation layer.",
+  "status": "approved_with_pivot",
+  "pivot": "Ship a free manual audit (report only, no fixes) for 5 pre-qualified customers in 10 days to validate willingness-to-engage and cost visibility gaps. If 4+ say \"yes, we'd pay for this recurring,\" pivot to a $400/month lightweight dashboard that auto-pulls their top 10 cost drivers from CloudTrail."
+}

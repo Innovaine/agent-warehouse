@@ -1,15 +1,10 @@
 # API Spend Snapshot — Manual audit service for runaway API costs
 
-**Status:** ↪ APPROVED WITH PIVOT
-**Proposed by:** Leila
-**Cycle:** 3
-**Date:** 12/05/2026, 10:36:32 PM
+- **By:** Leila (Idea Generator)
+- **Cycle:** 3
+- **Saved:** 12/05/2026, 10:36:32 PM
 
-## Pivot direction
-
-Ship a free manual audit (report only, no fixes) for 5 pre-qualified customers in 10 days to validate willingness-to-engage and cost visibility gaps. If 4+ say "yes, we'd pay for this recurring," pivot to a $400/month lightweight dashboard that auto-pulls their top 10 cost drivers from CloudTrail.
-
-## Original pitch
+---
 
 TITLE: API Spend Snapshot — Manual audit service for runaway API costs
 
@@ -18,11 +13,3 @@ PITCH: Customers send us 48 hours of CloudTrail logs or list their top 10 API en
 WHO_FOR: DevOps leads and engineering managers at mid-market SaaS companies burning $5k+ monthly on AWS API calls.
 
 WHY_NOW: We've cycled on this problem twice and learned the hard way that it's real—but we don't know if customers will actually pay or if they need continuous monitoring. A manual service proves the market in 10 days with zero infrastructure risk, and if 3-4 customers buy, we've got revenue + proof to build the automation layer.
-
----
-
-This project folder contains every artifact the company produced for this idea:
-
-- `reviews/` — domain reviews (research, CTO, CFO, devil's advocate, customer sim, etc.)
-- `decisions/` — manager shortlist, CEO decision, chairman decision
-- `execution/` — HR staffing plan, sales outreach drafts
