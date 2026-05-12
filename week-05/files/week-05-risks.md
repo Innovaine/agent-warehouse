@@ -1,0 +1,13 @@
+# Week 5 — API Spend Snapshot Risk Register
+
+| # | Risk | Probability | Impact | Mitigation this week | Earliest signal |
+|---|---|---|---|---|---|
+| 1 | Manual audit doesn't scale past 3–4 customers without hiring; margins collapse or delivery SLA breaks | High | High | Lock in max concurrent audits we can deliver this month (e.g., 2). Ship with that cap explicit in marketing. Test one real customer delivery end-to-end to find hidden work. | Actual audit takes >6 hours or reveals undocumented steps |
+| 2 | "Runaway API costs" is not a frequent enough pain to sustain recurring revenue; one-shot audit has no anchor for repeat purchase | High | High | This week: interview 2–3 customers who bought the audit to ask "did you change anything after?" and "would you pay monthly for ongoing monitoring?" If both answers are no, we have a business model problem, not a product problem. | Customer says "audit was helpful but we're done now" or "can't justify monthly cost for something we check quarterly" |
+| 3 | We ship with no onboarding clarity on what customers should send us (API logs format, scope, redaction rules); audits stall waiting for data | Med | High | Create a 1-page checklist: "Here's exactly what we need to start your audit" with 2 formats (CloudWatch + raw JSON examples). Test with next customer signup. | First customer takes >3 days to provide the right data; we spend 4+ hours asking clarifying questions |
+| 4 | Execution velocity slows if scope creep enters (custom integrations, data export formats, API connector library); we miss 2-week ship window | Med | Med | Define "scope lock" for this release: exactly which cloud providers, log formats, and output reports ship in v1. Reject any feature request this week—log it for v2 instead. | Engineering estimates slip >10% or any feature request marked "quick add" actually takes >4 hours |
+| 5 | We have zero revenue signal and 14 months runway; if this doesn't convert in 4 weeks, we're burning $XX/month on an unvalidated thesis | Med | High | Week 5–6: get 1 paying customer (even $500 pilot). If we can't, pivot or kill by end of week 6. No "keep iterating" zone—either it converts or we move. | No customer willing to pay even $500 for a manual audit by end of week 6 |
+
+**Top concern this week:** Manual audit is a services motion disguised as a product—it doesn't validate *business model*, only that the problem exists.
+
+**What kills us this week if we ignore it:** We ship a polished audit tool for a pain that doesn't recur, learn that only after 2 months, and lose runway fighting a dead idea.
